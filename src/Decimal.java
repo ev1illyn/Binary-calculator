@@ -8,7 +8,6 @@ public class Decimal extends Numbers{
 	
 	@Override
 	public void conversao() {
-		// traduzir essa caralha
 		Fracao fracao = new Fracao();
 
 		ArrayList<Long> quotient = new ArrayList<Long>();
@@ -33,7 +32,7 @@ public class Decimal extends Numbers{
 		}
 
 		if (getNumber() == Math.floor(getNumber())) {
-			System.out.println("Bin·rio: \n" + digits);
+			System.out.println("Bin√°rio: \n" + digits);
 		} else {
 			double numF = fracao.partefracionaria(getNumber());
 
@@ -53,7 +52,7 @@ public class Decimal extends Numbers{
 				cont++;
 			} while (cont < 6);
 
-			System.out.println("Bin·rio: \n" + digits + "," + fractionalDigits);
+			System.out.println("Bin√°rio: \n" + digits + "," + fractionalDigits);
 		}
 	}
 }
